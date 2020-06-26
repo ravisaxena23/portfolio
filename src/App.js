@@ -1,40 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import firebase from "firebase";
 import firestore from "./Firestore";
-class App extends Component {
+import Stack from "./components/Stack"
+import Message from "./components/Message"
 
-
-    state = {
-      portfolio: null
-    }
-  
-
-    componentDidMount() {
-      const db = firebase.firestore();
-      db.collection("users")
-        .get()
-        .then(querySnapshot => {
-          const data = querySnapshot.docs.map(doc => doc.data());
-          console.log(data);
-          this.setState({ users: data });
-        });
-    }
-
+class App extends React.Component {
   render() {
-    return(
-      <div>
-     <h1>fuck</h1>
-     {
-       this.state.portfolio &&
-       this.state.portfolio.map(portfolio=>{
-         return(
-           <div>
-             <p></p>
-           </div>
-         )
-       })
-     }
-    </div>
+    return (
+      <div className="App">
+        <Stack />
+        <Message />
+      </div>
     )
   }
 }
