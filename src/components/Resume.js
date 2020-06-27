@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/Resume.css'
-import { Route, Switch } from 'react-router-dom'
 
 class Resume extends React.Component {
   render() {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom'
 import './CSS/GetIntouch.css'
 
 class GetIntouch extends React.Component {
