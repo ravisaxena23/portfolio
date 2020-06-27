@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import firestore from "../Firestore";
+import firestore from "../../Firestore";
 import firebase from "firebase"
 
 class App extends Component {

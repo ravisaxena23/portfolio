@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import firebase from "firebase";
-import firestore from "../Firestore";
+import firestore from "../../Firestore";
 class Stack extends Component {
 
 
@@ -26,7 +26,7 @@ class Stack extends Component {
 
     render() {
         return (
-            <div>
+            <div id="stack">
                 {
                     this.state.stack &&
                     this.state.stack.map(stack => {
