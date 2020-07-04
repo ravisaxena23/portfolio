@@ -3,6 +3,8 @@ import firebase from "firebase";
 import firestore from "../Firestore";
 import Contribution from './Contribution'
 import './CSS/Resume.css'
+import bg from "../laptop.png"
+
 
 class Resume extends Component {
 
@@ -30,7 +32,7 @@ class Resume extends Component {
   render() {
     return (
       <React.Fragment id="resume">
-       <section class="timeline resume-section">
+       <section class="timeline resume-section"  style ={ { backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')",backgroundRepeat:"no-repeat" } }>
           {
             this.state.experiences &&
             this.state.experiences.map(experiences => {
