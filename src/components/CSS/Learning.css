@@ -56,3 +56,13 @@
     right: 24px;
     bottom: -20px;
 }
+.learn-padding{
+    padding: 14px;
+}
+@media screen and (max-width: 768px) {
+    .learn-card{
+        min-height: 800px;
+        margin: 25px;
+    }
+  }
+  

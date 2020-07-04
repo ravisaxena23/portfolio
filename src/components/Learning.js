@@ -27,12 +27,12 @@ class Learning extends Component {
 
   render() {
     return (
-      <div id="stack" class="row">
+      <div id="stack" class="row learn-padding">
         {
           this.state.stack &&
           this.state.stack.map(stack => (
             <div class="col m6 s12">
-              <div class="card app-card">
+              <div class="card app-card learn-card">
                 <div class="card-image">
                   {/* <img src={stack.Imglink} class="learning-img"></img> */}
                   <a class="learning-float learning-verify waves-effect waves-light" href={stack.Verify} target="_blank">Verify Enrolment</a>

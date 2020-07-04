@@ -3,7 +3,6 @@ import firebase from "firebase";
 import firestore from "../Firestore";
 import Contribution from './Contribution'
 import './CSS/Resume.css'
-import bg from "../laptop.png"
 
 
 class Resume extends Component {
@@ -32,26 +31,27 @@ class Resume extends Component {
   render() {
     return (
       <React.Fragment id="resume">
-       <section class="timeline resume-section"  style ={ { backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')",backgroundRepeat:"no-repeat" } }>
+        <section class="timeline resume-section" style={{ backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundPositionX: 'right', }}>
           {
             this.state.experiences &&
             this.state.experiences.map(experiences => {
               return (
-                  <div class="resume">
-                    <div class="timeline-item">
-                      <div class="timeline-point"></div>
-                        <div class="timeline-content js--fadeInLeft">
-                        <h2 class="heading">Title</h2>
-                        <div class="date">1 MAY 2016</div>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                        <a class="bnt-more resume-a">More</a>
-                      </div>
+                <div class="resume">
+                  <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content js--fadeInLeft">
+                      <h2 class="con-heading">{experiences.Institute}</h2>
+                      <div class="date">{experiences.Year}</div>
+                      <p class="para">{experiences.Name}</p>
+                      <p class="para"><b>Activities:</b>{experiences.Activities}</p>
+                      <a class="bnt-more resume-a">{experiences.Percentage}%</a>
                     </div>
                   </div>
+                </div>
               )
             })
           }
-      </section>
+        </section>
 
         <Contribution />
       </React.Fragment>

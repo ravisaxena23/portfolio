@@ -15,7 +15,8 @@
     transition: box-shadow .3s;
     border-radius: 20px;
     box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
-    background: rgba(225,225,225,0.9)
+    background: rgba(225,225,225,0.9);
+    margin: 25px;
 }
 a:hover {
     cursor:pointer;
