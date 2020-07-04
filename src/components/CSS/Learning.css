@@ -1,4 +1,58 @@
-.background-color-learning{
-    background-color: antiquewhite;
-    min-height: 600px;
+.learning-body{
+    min-height: 100vh;
+    background: 
+    linear-gradient(to bottom right, transparent 50%, white 50.25%), /* update direction and start/stop value to your needs */
+    linear-gradient(90deg,#000428,#004e92) #fafafa;
+    background-size:100% auto;
+    transition:0.5s;
+    z-index: 0;
+    color: #F0F8FF;
+}
+.learning-img{
+    max-height: 348px;
+    object-fit: cover;
+}
+
+.learning-btn{
+    background: 
+    linear-gradient(90deg,#000428,#004e92) #fafafa;
+    border-radius: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 11px;
+    min-width: 170px;
+    text-align: center;
+    display: inline-block;
+    color: #fff!important;
+    font-weight: 500;
+    margin: 5px;
+    box-shadow:
+    0 0 50px #fafafa,
+    1px 0 8px #000428,
+    1px 0 8px #004e92;
+}
+.learning-verify{
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+    width: fit-content;
+    line-height: 40px;
+    padding: 8px;
+    background: 
+    linear-gradient(90deg,#000428,#004e92) #fafafa;
+    transition: background-color .3s;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow:
+    0 0 8px #fafafa,
+    1px 0 18px #000428,
+    1px 0 18px #004e92;
+}
+.learning-float{
+    position: absolute;
+    right: 24px;
+    bottom: -20px;
 }

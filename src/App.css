@@ -2,3 +2,27 @@
     max-width: 60%;
     padding: 10px;
 }
+.heading{
+    font-family: Roboto Mono,monospace;
+    margin-top: 10px;
+}
+.app-body{
+    line-height: 24px;
+    letter-spacing: 0.8px;
+}
+.app-card{
+    color: #000;
+    transition: box-shadow .3s;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    background: rgba(225,225,225,0.9)
+}
+a:hover {
+    cursor:pointer;
+}
+.para{
+    font-size: 1.2vm;
+    line-height: 27px;
+    word-wrap: break-word;
+    white-space: initial;
+}
