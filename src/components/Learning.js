@@ -28,6 +28,7 @@ class Learning extends Component {
   render() {
     return (
       <div id="stack" class="row learn-padding">
+        <h5 class="heading con-color learn-padding">MY LEARNINGS</h5>
         {
           this.state.stack &&
           this.state.stack.map(stack => (

@@ -31,6 +31,7 @@ class Resume extends Component {
   render() {
     return (
       <React.Fragment id="resume">
+        <h5 class="heading resume-heading">EDUCATION</h5>
         <section class="timeline resume-section" style={{ backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundPositionX: 'right', }}>
           {
             this.state.experiences &&
@@ -44,7 +45,7 @@ class Resume extends Component {
                       <div class="date">{experiences.Year}</div>
                       <p class="para">{experiences.Name}</p>
                       <p class="para"><b>Activities:</b>{experiences.Activities}</p>
-                      <a class="bnt-more resume-a">{experiences.Percentage}%</a>
+                      <a class="bnt-more resume-a">{experiences.Percentage}</a>
                     </div>
                   </div>
                 </div>

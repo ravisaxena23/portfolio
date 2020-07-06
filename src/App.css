@@ -1,6 +1,7 @@
 .sidenav{
     max-width: 60%;
     padding: 10px;
+    font-size: 11px;
 }
 .heading{
     font-family: Roboto Mono,monospace;
@@ -26,4 +27,14 @@ a:hover {
     line-height: 27px;
     word-wrap: break-word;
     white-space: initial;
+}
+.parallax {
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.head-font{
+    font-size: 11px !important;
 }

@@ -63,7 +63,7 @@ class Contribution extends Component {
         return (
             <div class="con-bg-color">
                 <br />
-                <h5 class="heading con-color">MY WORK</h5>
+                <h5 class="heading con-color">WORK EXPERRIENCE</h5>
                 <div id="Contribution" class="scrolling-wrapper">
                     {
                         this.state.contribution &&

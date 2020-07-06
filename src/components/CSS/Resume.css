@@ -165,3 +165,10 @@ blockquote {
     transform: translateX(-50%);
   }
 }
+
+.resume-heading{
+  text-align: center;
+  padding: 20px;
+  color:  #3F51B5;
+  font-weight: 500;
+}

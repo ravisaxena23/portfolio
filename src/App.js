@@ -17,7 +17,8 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div class="app-body">
+      <div class="app-body parallax">
+        <div class="navbar-fixed">
         <nav>
           <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -27,16 +28,17 @@ class App extends React.Component {
             <li><a href="#4">Contact</a></li>
           </ul>
         </nav>
+        </div>
         <ul id="slide-out" class="sidenav">
-          <li><a href="#1"><i class="material-icons">person_pin</i>Know Me</a></li>
-          <li><a href="#2"><i class="material-icons">format_align_left</i>My Work</a></li>
-          <li><a href="#3"><i class="material-icons">spellcheck</i>Learning</a></li>
-          <li><a href="#4"><i class="material-icons">contacts</i>Contact</a></li>
+          <li><a href="#1" class="head-font"><i class="material-icons">person_pin</i>Know Me</a></li>
+          <li><a href="#2" class="head-font"><i class="material-icons">format_align_left</i>My Work</a></li>
+          <li><a href="#3" class="head-font"><i class="material-icons">spellcheck</i>Learning</a></li>
+          <li><a href="#4" class="head-font"><i class="material-icons">contacts</i>Contact</a></li>
         </ul>
         {/* <div id="1" ><Intro /></div> */}
         <div id="2"><Resume /></div>
         <div id="3" className="learning-body"><Learning /></div>
-        {/* <div id="4"><GetIntouch /></div> */}
+        <div id="4" className="getintouch-body"><GetIntouch /></div>
       </div>
     )
   }
