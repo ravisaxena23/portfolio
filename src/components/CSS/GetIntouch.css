@@ -14,7 +14,7 @@ color: #B61919;
     margin-right: auto;
     padding: 13px;
     background: 
-    linear-gradient(90deg,#000428,#004e92) #fafafa;
+    linear-gradient(90deg,#000428,#464775) #292828;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
     
@@ -147,4 +147,18 @@ color: #B61919;
   
   .btn-align{
       text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .getintouch-card{
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 13px;
+      background: 
+      linear-gradient(90deg,#000428,#464775) #292828;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+      
+  }
   }

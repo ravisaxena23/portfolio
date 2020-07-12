@@ -32,7 +32,8 @@ class Resume extends Component {
     return (
       <React.Fragment id="resume">
         <h5 class="heading resume-heading">EDUCATION</h5>
-        <section class="timeline resume-section" style={{ backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundPositionX: 'right', }}>
+        {/* style={{ backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundPositionX: 'right', }} */}
+        <section class="timeline resume-section" >
           {
             this.state.experiences &&
             this.state.experiences.map(experiences => {

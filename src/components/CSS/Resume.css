@@ -32,8 +32,8 @@
   width: 45%;
   padding: 10px 30px;
   border-radius: 4px;
-  background: #f5f5f5;
-  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  background-color: #292828;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.6);
 }
 .timeline-content::after {
   content: '';
@@ -44,13 +44,13 @@
   top: 30px;
   right: -15px;
   border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #292828;
 }
 
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3F51B5;
+  background: #464775;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -60,7 +60,7 @@
 
 .resume-a {
   background: 
-  linear-gradient(90deg,#000428,#004e92) #fafafa;
+  linear-gradient(90deg,#000428,#464775) #292828;
   color: #FFFFFF;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -73,7 +73,7 @@
 }
 .resume-a:hover, a:active, a:focus {
   background: 
-  linear-gradient(90deg,#000428,#004e92) #fafafa;
+  linear-gradient(90deg,#000428,#464775) #292828;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -108,12 +108,12 @@
 blockquote {
   margin-top: 30px;
   color: #757575;
-  border-left-color: #3F51B5;
+  border-left-color: #464775;
   padding: 0 20px;
 }
 
 .date {
-  background: #FF4081;
+  background: #464775;
   display: inline-block;
   color: #FFFFFF;
   padding: 10px;
@@ -169,6 +169,6 @@ blockquote {
 .resume-heading{
   text-align: center;
   padding: 20px;
-  color:  #3F51B5;
+  color:  #fafafa;
   font-weight: 500;
 }

@@ -96,7 +96,7 @@
 }
 .con-links{
     background: 
-    linear-gradient(90deg,#000428,#004e92) #fafafa;
+    linear-gradient(90deg,#000428,#464775) #292828;
 }
 .con-links.a:hover {
     cursor:pointer;
@@ -173,7 +173,7 @@
 }
 .con-bg-color{
     background: 
-    linear-gradient(90deg,#000428,#004e92) #fafafa;
+    linear-gradient(90deg,#000428,#464775) #292828;
 }
 .con-time{
     font-family: Roboto Mono,monospace;
