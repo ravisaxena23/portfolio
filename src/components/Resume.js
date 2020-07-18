@@ -9,7 +9,8 @@ class Resume extends Component {
 
 
   state = {
-    experiences: null
+    experiences: null,
+    skills: null
   }
 
 
@@ -26,14 +27,27 @@ class Resume extends Component {
         this.setState({ experiences: experiences })
         console.log(snapshot)
       });
+      db.collection("skills")
+      .get()
+      .then(snapshot => {
+        const skills = []
+        snapshot.forEach(doc => {
+          const dat = doc.data()
+          skills.push(dat)
+        })
+        this.setState({ skills: skills })
+        console.log(snapshot)
+      });
   };
 
   render() {
     return (
       <React.Fragment id="resume">
-        <h5 class="heading resume-heading">EDUCATION</h5>
+        
+        <div class="row">
         {/* style={{ backgroundImage: "url('https://ravi-portfolio.s3.us-east-2.amazonaws.com/image6.jpg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundPositionX: 'right', }} */}
-        <section class="timeline resume-section" >
+        <div class="timeline resume-section col m6 s12" >
+        <h5 class="heading resume-heading">EDUCATION</h5>
           {
             this.state.experiences &&
             this.state.experiences.map(experiences => {
@@ -53,7 +67,26 @@ class Resume extends Component {
               )
             })
           }
-        </section>
+          </div>
+          <div class="col m6 s12"> 
+          <h5 class="heading resume-heading">My SKILLS</h5>
+          {
+            this.state.skills &&
+            this.state.skills.map(skills => {
+              return (
+                <div class="wrap">
+                <section class="chart-wrapper">
+                  <ul class="chart-horizontal">
+              <li class="chart-bar" data-skill={skills.Value}><span class="chart-bar-label">{skills.Name}</span> <span class="percentage">{skills.Value}%</span></li>
+                  </ul> 
+                  
+                </section>
+              </div>
+              )
+            })
+          }
+          </div>
+        </div>
 
         <Contribution />
       </React.Fragment>
