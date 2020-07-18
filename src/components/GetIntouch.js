@@ -14,14 +14,14 @@ class GetIntouch extends Component {
       nameerror: "",
       emailerror: "",
       questionerror: "",
-      mobileerror:""
+      mobileerror: ""
     };
   }
   validate = () => {
     let nameerror = "";
     let emailerror = "";
     let questionerror = "";
-    let mobileerror=""
+    let mobileerror = ""
     if (!this.state.fullname) {
       nameerror = "Blank Name";
     }
@@ -30,16 +30,16 @@ class GetIntouch extends Component {
       emailerror = "Invalid Email";
     }
 
-    if(!this.state.mobileNo){
-      mobileerror="Invalid Mobile No";
+    if (!this.state.mobileNo) {
+      mobileerror = "Invalid Mobile No";
     }
 
-    if(!this.state.question){
-      questionerror="Oops You Forget To Write"
+    if (!this.state.question) {
+      questionerror = "Oops You Forget To Write"
     }
 
     if (emailerror || nameerror || mobileerror || questionerror) {
-      this.setState({ emailerror, nameerror,mobileerror,questionerror });
+      this.setState({ emailerror, nameerror, mobileerror, questionerror });
       return false;
     }
 
@@ -52,7 +52,7 @@ class GetIntouch extends Component {
   }
   onSubmit = e => {
     e.preventDefault();
-    if (this.validate()==true) {
+    if (this.validate() == true) {
       console.log("cool")
       const db = firebase.firestore();
       const form = {
@@ -69,7 +69,7 @@ class GetIntouch extends Component {
         question: "",
       });
     }
-    else{
+    else {
       console.log("Fuck")
     }
   };
@@ -111,7 +111,7 @@ class GetIntouch extends Component {
                 value={this.state.mobileNo}
                 onChange={e => this.handleChange(e)}
               />
-                {this.state.mobileerror ? (<div class="form-show">{this.state.mobileerror}</div>) : (<div class="form-hide">{this.state.mobileerror}</div>)}
+              {this.state.mobileerror ? (<div class="form-show">{this.state.mobileerror}</div>) : (<div class="form-hide">{this.state.mobileerror}</div>)}
 
             </div>
             <div class="col m12 s12">
@@ -127,11 +127,11 @@ class GetIntouch extends Component {
             </div>
           </div>
           <div class="btn-align">
-          <a type="submit" onClick={(e) => this.onSubmit(e)}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>Submit</a>
+            <a type="submit" onClick={(e) => this.onSubmit(e)}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>Submit</a>
           </div>
         </form>
 

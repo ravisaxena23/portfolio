@@ -74,7 +74,7 @@ class Contribution extends Component {
                                         <span class="card-title heading">{contribution.Type}</span>
                                         <div class="divider"></div>
                                         <div class="card-content">
-                                        <span class="card-title heading">{contribution.Organization}</span>
+                                            <span class="card-title heading">{contribution.Organization}</span>
                                             <p class="para">{contribution.Description}</p><br />
                                             <span class="con-time">{contribution.Time}</span>
                                         </div>
