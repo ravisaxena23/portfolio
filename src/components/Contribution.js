@@ -30,10 +30,10 @@ class Contribution extends Component {
         window.onload = function () {
 
             document.getElementById('right-button').onclick = function () {
-                scrollLeft(document.getElementById('Contribution'), 310, 700);
+                scrollLeft(document.getElementById('Contribution'), 310, 1000);
             }
             document.getElementById('left-button').onclick = function () {
-                scrollLeft(document.getElementById('Contribution'), -310, 700);
+                scrollLeft(document.getElementById('Contribution'), -310, 1000);
             }
         };
 

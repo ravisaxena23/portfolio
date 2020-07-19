@@ -159,7 +159,7 @@ blockquote {
     content: '';
     background: #C5CAE9;
     width: 5px;
-    height: 120ex;
+    height: 200ex;
     position: absolute;
     transform: translateX(-50%);
   }
