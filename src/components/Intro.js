@@ -66,9 +66,9 @@ class Intro extends Component {
                                         <div class="intro-div">E-mail:&nbsp;&nbsp;<a href={intro.Email} class="intro-link">{intro.Email}</a></div>
                                         <div class="intro-div">Phone:&nbsp;&nbsp;<a href={intro.Phone} class="intro-link">{intro.Phone}</a></div>
                                         <div class="intro-div">Address:&nbsp;&nbsp;<a href={intro.Address} class="intro-link">{intro.Address}</a></div>
-                                        <a href="#"><i class="fab fa-linkedin intro-icon fa-2x" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fab fa-github fa-2x intro-icon" aria-hidden="true"></i></a>
-                                        <a href="#"> <i className="fab fa-gitlab fa-2x intro-icon"></i></a>
+                                        <a href={intro.Linkdin}><i class="fab fa-linkedin intro-icon fa-2x" aria-hidden="true"></i></a>
+                                        <a href={intro.Github}><i class="fab fa-github fa-2x intro-icon" aria-hidden="true"></i></a>
+                                        <a href={intro.Gitlab}> <i className="fab fa-gitlab fa-2x intro-icon"></i></a>
                                     </div>
                                     <div class=" hide-on-small-only col m4 bigcard-content">
                                         <h5 >Hola!</h5>
